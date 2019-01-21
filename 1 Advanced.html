@@ -5,18 +5,11 @@
 </head>
 <body>
 	<script>
-		function aa(){
-			var a =200;
-			var b= 60;
-			
-			
-			document.write("Hours= "+Math.floor(a/b)+"<br>minutes ="+(a%b));
-
+		function timecalculator(a){
+			var b = 60;
+			document.write(a + " Minutes equals "+Math.floor(a/b)+" Hours and " + (a%b) + " Minutes!");
 		}
-
-     aa();
-
+     timecalculator(900);
 	</script>
-
 </body>
 </html>
