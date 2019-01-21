@@ -3,11 +3,17 @@
 <head>
 	<title>advanced3</title>
 </head>
-<body>
+<body id ="background">
 	<script>
-		function
-		
-	</script>
+		function randomcolor(){
+		var a = Math.floor((Math.random() * 255) + 1);
+		var b = Math.floor((Math.random() * 255) + 1);
+		var c = Math.floor((Math.random() * 255) + 1);
+		document.write(a + "<br>" +  b + "<br>" + c);
+		document.body.style.backgroundColor = "rgb(" + a + "," + b + "," + c + ")";
+		}
+		randomcolor();
 
+	</script>
 </body>
 </html>
