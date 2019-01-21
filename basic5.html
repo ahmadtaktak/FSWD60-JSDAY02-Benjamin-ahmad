@@ -4,17 +4,34 @@
 	<title></title>
 </head>
 <body>
-	<script>
-	function formular(){
-		var width=14;
-		var height=14;
-		var depth=14;
-		 var area=width*height;
-		var volume=width*height*depth;
-		document.write("this is area" +area+ "<br>" + "this is volume"+volume )	;
-	}
-	formular();
-	</script>
 
+	<input id ="height"type="text" name="value1" value="" placeholder="height">
+	<br>
+	<br>
+	<input id ="width" type="text" name="value2" value="" placeholder="width">
+	<br>
+	<br>
+	<input id ="depth" type="text" name="value3" value="" placeholder="depth">
+	<br>
+	<br>
+	<button onclick="calculator()" type="">Calculate</button>
+	<br>
+	<br>
+	<p id ="areaoutput"></p>
+	<p id ="volumeoutput"></p>
+	<script>
+		function calculator(width, height, depth){
+			var width = document.getElementById("width").value;
+			var height = document.getElementById("height").value;
+			var depth = document.getElementById("depth").value;
+			var area = width*height;
+			var volume = width*height*depth;
+
+			document.getElementById("areaoutput").innerHTML = "The area is: " + area;
+			document.getElementById("volumeoutput").innerHTML = "The volume is: " + volume;
+		}
+
+
+	</script>
 </body>
 </html>
