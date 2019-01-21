@@ -5,9 +5,13 @@
 </head>
 <body>
 	<script>
-		(function(){
+		(function(a){
+			var date =new Date(a);
+			date.setDate(date.getDate()-1)
+			document.write(String(date).substring(0,15));
+
 			
-		})()
+		})("Feb 23, 2017")
 	</script>
 
 </body>
